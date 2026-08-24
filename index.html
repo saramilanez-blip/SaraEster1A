@@ -54,11 +54,16 @@
   <p>boas-vindas ao meu novo blog! Aqui vou compartilhar
      conhecimentos sobre gatinhos.</p>
     <button> 💖 <span> 0 </span> </button>
-   <button> 🐈 </span> 0 </span> </button>
+   <button> 👍 </span> 0 </span> </button>
   </div>
   </main>
   </body>
-</script>
-     const botao = document.querySelector("button");
-     botao.addEvertListener("click",
-</html>
+     const botoes = document.querySelector("button");
+     botao.addEvertListener("click", botaoclicado);
+
+ function botaoClicado() {
+    console.log("fui clicado");
+    let texto = botao.qurySelector("span");
+    texto.textContent++;
+
+}
